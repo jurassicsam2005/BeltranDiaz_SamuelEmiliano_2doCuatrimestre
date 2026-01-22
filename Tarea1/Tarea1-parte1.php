@@ -8,10 +8,10 @@ if ($ventas >= 5000) {
 }  
 
 #Ejericio 2: Haz un programa que guarde los gastos diarios de una semana en un arreglo indexado, calcule el total de gastos utilizando un ciclo y muestre también el promedio semanal.
-$gastos= [150, 200, 250, 300, 350, 400, 450, 500];
+$gastos= [150, 200, 250, 300, 350, 400, 450];
 $total_gastos = 0;
-for ($i = 0; $i < count($gastos); $i++) {
-    $total_gastos += $gastos[$i];
+foreach ($gastos as $gasto) {
+    $total_gastos += $gasto;
 }
 echo "Total de gastos: $total_gastos";
 echo "Promedio semanal: " . ($total_gastos / count($gastos));
@@ -60,12 +60,12 @@ $cantidad_empleados = count($nombres_empleados);
 echo "Cantidad de empleados registrados: $cantidad_empleados<br>";
 
 #Ejercicio 8: Haz un programa que almacene varios números en un arreglo y muestre únicamente los números mayores a 50 utilizando un ciclo y una condición.
-$numeros = [20, 35, 66, 90, 77, 45, 12, 88];
-foreach ($numeros as $numeros) {
-    if ($numeros > 50) {
-        echo "Número mayor a 50: $numeros<br>";
+$numeros = [12, 35, 66, 90, 77, 45, 55, 88];
+foreach ($numeros as $numero) {
+    if ($numero > 50) {
+        echo "Número mayor a 50: $numero<br>";
     }
-}
+} 
 
 #Ejercicio 9: Haz un programa que almacene las ventas de una semana y muestre cuántos días las ventas fueron mayores a $3,000.
 $ventas_semanales = [2500, 3200, 4500, 2800, 5000, 1500, 4000];
@@ -81,8 +81,7 @@ $ventas_vendedores = [
     "Vendedor 1" => 5000,
     "Vendedor 2" => 7000,
     "Vendedor 3" => 6000,
-];
-$dias_mayores_3000 = 0; 
+]; 
 $mayor_venta = 0; 
 $vendedor_exitoso = "";
 foreach ($ventas_vendedores as $vendedor => $venta) {
