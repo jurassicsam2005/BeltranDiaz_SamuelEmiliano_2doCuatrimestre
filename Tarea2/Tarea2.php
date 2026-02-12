@@ -14,12 +14,12 @@ echo "La edad mayor es: $edad_mayor<br>";
 // Ejercicio 3: Haz un programa que declare un arreglo de palabras y muestre solo las que tienen más de 5 letras.
 $palabras = ["Hola", "Estudiante", "Como", "Estas", "Bienvenido"];
 $palbras_mas_de_cinco = [];
-foreach ($palabras as $palabra)
-    {
-        }
-if (strlen($palabra) > 5) {
-    $palabras_mas_de_cinco[] = $palabra;
+foreach ($palabras as $palabra) {
+    if (strlen($palabra) > 5) {
+        $palabras_mas_de_cinco[] = $palabra;
+    }
 }
+
 echo "Palabras con mas de 5 letras: " . implode(", ", $palabras_mas_de_cinco) . "<br>";
 
 // Ejercicio 4: Haz un programa que declare una cadena y muestre cuántas veces aparece cada letra.
@@ -40,15 +40,14 @@ for ($i = 0; $i < strlen($cadena); $i++) {
 $numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 $pares = [];
 $impares = [];
-foreach ($numeros as $nuemros)
-    {
-    if ($numero % 2 == 0) } {
+foreach ($numeros as $numero) {
+    if ($numero % 2 == 0) 
         $pares[] = $numero; 
-    } else {
-        $impares[] = $numero; 
-    } 
-    echo "Numeros pares: " 
-    
+     } else { 
+        $impares[] = $numero;
+}   
+echo "Numeros pares: " . implode(", ", $pares) . "<br>" . "Numeros impares: " . implode(", ", $impares) . "<br>";
+echo "Numeros impares: " . implode(", ", $impares) . "<br>";
 
 
 // Ejercicio 6: Haz un programa que declare una cadena y cuente cuántas vocales tiene. 
