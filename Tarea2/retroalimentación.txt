@@ -1,0 +1,9 @@
+- Tuviste varios errores de sintaxis. Por ejemplo, en el ejercicio 3 dejaste tu for each vacío
+por lo cual solo se mostraba la primera palabra (Los errores ya los corregí).
+- En el ejercicio 5, hiciste un for each, pero estabas usando una variable no existente.
+- Mismo caso que en el ejercicio 7.
+- En el ejercicio 9, utilizaste un arreglo "alumno", y en tu recorrido tenías alumnos.
+- Además detecté varios corchetes sin cerrar y puntos y coma faltantes.
+- Es importante que pruebes los ejercicios antes de entregarlos, no puedes estar programando, sin
+saber si tu programa se está ejecutando correctamente o no, ya que inicialmente, tu programa no
+se ejecutaba.

@@ -14,8 +14,13 @@ echo "La edad mayor es: $edad_mayor<br>";
 // Ejercicio 3: Haz un programa que declare un arreglo de palabras y muestre solo las que tienen más de 5 letras.
 $palabras = ["Hola", "Estudiante", "Como", "Estas", "Bienvenido"];
 $palbras_mas_de_cinco = [];
+<<<<<<< HEAD
 foreach ($palabras as $palabra) {
     if (strlen($palabra) > 5) {
+=======
+foreach ($palabras as $palabra){
+    if (strlen($palabra) >= 5) {
+>>>>>>> e7aec1d83a95fd41f715950a39353efa19a13021
         $palabras_mas_de_cinco[] = $palabra;
     }
 }
@@ -40,6 +45,7 @@ for ($i = 0; $i < strlen($cadena); $i++) {
 $numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 $pares = [];
 $impares = [];
+<<<<<<< HEAD
 foreach ($numeros as $numero) {
     if ($numero % 2 == 0) 
         $pares[] = $numero; 
@@ -48,6 +54,19 @@ foreach ($numeros as $numero) {
 }   
 echo "Numeros pares: " . implode(", ", $pares) . "<br>" . "Numeros impares: " . implode(", ", $impares) . "<br>";
 echo "Numeros impares: " . implode(", ", $impares) . "<br>";
+=======
+foreach ($numeros as $numero)
+    {
+    if ($numero % 2 == 0)  {
+        $pares[] = $numero; 
+    } else {
+        $impares[] = $numero; 
+    } 
+
+    }
+    echo "Numeros pares: " . implode(", ", $pares) . "<br>";
+    echo "Numeros impares: " . implode(", ", $impares) . "<br>";
+>>>>>>> e7aec1d83a95fd41f715950a39353efa19a13021
 
 
 // Ejercicio 6: Haz un programa que declare una cadena y cuente cuántas vocales tiene. 
@@ -70,7 +89,7 @@ $productos = [
     "Peras" => 2
 ];
 
-foreach ($productos as $productos => $cantidad) {
+foreach ($productos as $producto => $cantidad) {
     if ($cantidad < 5) {
         }
         echo "Producto bajo en stock: $producto (Cantidad $cantidad)<br>";
@@ -81,16 +100,16 @@ $frase = "Programas es el futuro";
 $palabra_a_reemplazar = "futuro";
 $palabra_nueva = "camino a un mejor mañana";
 $frase_modificada = str_replace($palabra_a_reemplazar, $palabra_nueva, $frase);
-echo "Frase modificada" : $frase_modificada<br>;
+echo "Frase modificada" . $frase_modificada . "<br>";
 
 // Ejercicio 9: Haz un programa que declare un arreglo asociativo de alumnos, donde cada alumno tenga varias calificaciones, y calcule el promedio de cada uno.
-$alumnos = []; 
+$alumnos = [
     "Gabriel" => [9 ,8 ,10 ], 
     "Samuel" => [8, 8, 9],
     "Carlos" => [7, 8, 9], 
-    "Mario" => [10, 9, 10]; 
-
-    foreach ($alumnos as $alumno) {
+    "Mario" => [10, 9, 10] 
+];
+    foreach ($alumnos as $alumno => $calificaciones) {
         $promedio = array_sum($calificaciones) / count($calificaciones);
         }
         echo "El rpomedio de $alumno es: $promedio<br>";
