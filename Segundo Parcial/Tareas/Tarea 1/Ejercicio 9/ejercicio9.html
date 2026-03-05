@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <h1>Ejercicio 9: Haz un programa que solicite una frase mediante un formulario y una palabra a buscar. Posteriormente, imprime (Muestra en pantalla):
+        a. Cuántas veces aparece la palabra en la frase (Sin importar mayúsculas o minúsculas).
+        b. Si la frase contiene o no la palabra buscada.
+        c. La frase con todas las apariciones de las palabras resaltadas en negritas (etiqueta <strong> </strong> para resaltar en negritas).
+    </h1>
+    
+    <h2>Formulario</h2>
+    <form action="ejercicio9.php" method="get">
+        <label for="frase">Frase:</label>
+        <input type="text" id="frase" name="frase" required><br><br>
+        <label for="palabra">Palabra a buscar:</label>
+        <input type="text" id="palabra" name="palabra" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

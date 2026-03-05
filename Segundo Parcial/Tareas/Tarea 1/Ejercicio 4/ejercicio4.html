@@ -6,6 +6,49 @@
     <title>Ejercicio 4</title>
 </head>
 <body>
-    
+    <h1>Ejercicio 4: Crea un formulario con un campo de texto donde el usuario ingrese nombres separados por coma. Muestra la siguiente información en pantalla:
+      a. Cada nombre en una línea diferente.
+      b. Total, de nombres ingresados.
+      c. Muestra los nombres ordenados alfabéticamente.
+      d. Indica si hay nombres duplicados
+    </h1>
+    <h2>Formulario</h2>
+    <form id="nameForm">
+        <label for="names">Ingrese nombres separados por coma:</label><br>
+        <input type="text" id="names" name="names"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('nameForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const namesInput = document.getElementById('names').value;
+            const namesArray = namesInput.split(',').map(name => name.trim()).filter(name => name !== '');
+            
+            // a. Cada nombre en una línea diferente
+            const namesList = namesArray.join('<br>');
+            
+            // b. Total de nombres ingresados
+            const totalNames = namesArray.length;
+            
+            // c. Nombres ordenados alfabéticamente
+            const sortedNames = [...new Set(namesArray)].sort().join('<br>');
+            
+            // d. Indicar si hay nombres duplicados
+            const hasDuplicates = new Set(namesArray).size !== namesArray.length;
+            const duplicatesMessage = hasDuplicates ? 'Hay nombres duplicados.' : 'No hay nombres duplicados.';
+            
+            // Mostrar resultados
+            document.getElementById('result').innerHTML = `
+                <h2>Resultados:</h2>
+                <p><strong>Nombres ingresados:</strong><br>${namesList}</p>
+                <p><strong>Total de nombres:</strong> ${totalNames}</p>
+                <p><strong>Nombres ordenados alfabéticamente:</strong><br>${sortedNames}</p>
+                <p><strong>Duplicados:</strong> ${duplicatesMessage}</p>
+            `;
+        });
+    </script>
 </body>
 </html>

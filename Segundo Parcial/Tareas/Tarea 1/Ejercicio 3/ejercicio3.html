@@ -6,6 +6,20 @@
     <title>Ejercicio 3</title>
 </head>
 <body>
-    
+    <h1>Ejercicio 3: Haz un programa que solicite al usuario el nombre de un artículo, su precio original y el porcentaje de descuento. Posteriormente muestra en pantalla:
+     a. El monto del descuento.
+     b. El precio final con descuento aplicado.
+     c. Un mensaje indicando si el descuento es “Bajo” (menos del 10%),
+      “Moderado (10% al 30%) o “Alto” (más del 30%).</h1>
+    <h2>Formulario</h2>
+    <form action="ejercicio3.php" method="get">
+        <label for="articulo">Ingrese el nombre del artículo:</label>
+        <input type="text" id="articulo" name="articulo" required><br><br>
+        <label for="precio">Ingrese el precio original:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required><br><br>
+        <label for="descuento">Ingrese el porcentaje de descuento:</label>
+        <input type="number" id="descuento" name="descuento" step="0.01" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
