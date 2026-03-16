@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericio 2</title>
+</head>
+<body>
+    <h1>Ejercicio 2: Crea un formulario que pida un párrafo o texto libre (Utiliza un textarea). Al
+enviar el formulario, muestra lo siguiente:
+a. El número total de palabras en el texto (Sin contar espacios en
+blanco).
+b. El número de oraciones, contando los puntos finales “.” Presentes en
+el texto.
+c. La palabra más larga del texto.
+d. El promedio de caracteres por palabra, redondeado a 2 decimales</h1>
+<br>
+<h2>Formulario</h2>
+<br>
+<form action="ejercicio2.php" method="post">
+    <label for="texto">Ingresa un párrafo o texto:</label><br>
+    <textarea id="texto" name="texto" rows="6" cols="60" required></textarea><br>
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>Ejercicio 7: Crea un formulario que pida:
+a. Litros de gasolina cargados.
+b. Precio por litro (En pesos).
+c. Kilómetros recorridos con esa carga.
+d. Un presupuesto adicional disponible (en pesos) para cargar más
+gasolina.
+Al enviar el formulario, calcula y muestra:
+a. El costo total de la carga actual. (litros x precio por litro)
+
+b. El rendimiento del vehículo en km/litro (kilómetros / litros), formatea
+con 2 decimales.
+c. El costo por kilómetro recorrido (costo total / kilómetros), formatea con
+2 decimales.
+d. Cuántos litros adicionales se pueden comprar con el presupuesto
+extra y cuántos kilómetros adicionales podría recorrer.</h1>
+<br>
+<h2>Formulario</h2>
+<form action="ejercicio7.php" method="post">
+    <label>Litros de gasolina cargados:</label>
+        <input type="number" name="litros" step="0.01" required><br><br>
+
+        <label>Precio por litro (MXN):</label>
+        <input type="number" name="precio" step="0.01" required><br><br>
+
+        <label>Kilómetros recorridos con esa carga:</label>
+        <input type="number" name="km" step="0.01" required><br><br>
+
+        <label>Presupuesto adicional disponible (MXN):</label>
+        <input type="number" name="extra" step="0.01" required><br><br>
+
+        <button type="submit">Calcular</button>
+</form>
+</body>
+</html>

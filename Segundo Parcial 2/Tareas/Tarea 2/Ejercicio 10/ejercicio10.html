@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <h1>Ejercicio 10: 10.Crea un formulario que pida un número de tarjeta de crédito (Solo los dígitos,
+sin espacios ni guiones). Al enviar el formulario, verifica lo siguiente:
+
+a. Si tiene exactamente 16 caracteres.
+b. Si todos los caracteres son dígitos numéricos (Puedes usar
+ctype_digit()).
+c. Si ambas condiciones se cumplen, muestra el número formateado en
+grupos de 4 separados por espacio, por ejemplo: 1234 5678 9012
+3456
+d. Muestra una versión, donde los primeros 12 dígitos se remplacen por
+ateísticos y solo se muestren los últimos 4, por ejemplo: **** **** ****
+3456</h1>
+<br>
+<h2>Formulario</h2>
+<form action="ejercicio10.php" method="post">
+    <label>Número de tarjeta (16 dígitos, sin espacios ni guiones):</label><br>
+    <input type="text" name="tarjeta" maxlength="16" required><br><br>
+    <button type="submit">Validar</button>
+</form>
+</body>
+</html>
