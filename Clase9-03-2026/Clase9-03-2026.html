@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+</head>
+<body>
+    <h1>Ejemplo 1: Crea un formulario de registro de usuario que solicite el nomnre completo, correo electronico, contraseña y edad. El programa debe validar que la contraseña tenga al menos 8 caracteres y que la edad sea un numero positivo. Si todo es corecto, muestra un resumen de los datos registrados, ocultando la contraseña con asteriscos.</h1>
+    <hr>
+    <h2>Formulario</h2>
+    <form action="ejemplo1.php" method="post">
+        <label>Nombre: </label>
+        <input type="text" name="nombre">
+        <br>
+        <label>Correo electronico: </label>
+        <input type="email" name="correo">
+        <br>
+        <label>Contraseña: </label>
+        <input type="password" name="contrasena">
+        <br>
+        <label>Edad: </label>
+        <input type="number" name="edad">
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

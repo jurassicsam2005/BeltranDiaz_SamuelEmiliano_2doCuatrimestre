@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 5</title>
+</head>
+<body>
+    <h1>Ejemplo 5: Haz un programa que gestione las calificaciones de un alumno. El formulario debe pasar el nomnre del alumno, la materia (usando un select con al menos 6 materias) y la calificacion obtenida (valor numerico del 0 al 100). El programa debe determinar y mostrar si el alumno aprobo o reprobo (calificacion minima aprobatoria es 60), su calificacion en letra (A, B, C, D, F)</h1>
+    <br>
+    <form action="Ejemplo5.php" method="post">
+        <label>Nombre del alumno: </label>
+        <input type="text" name="nombre">
+        <br>
+        <label>Materia: </label>
+        <select name="materia">
+            <option value="Matematicas">Matematicas</option>
+            <option value="Fisica">Fisica</option>
+            <option value="Quimica">Quimica</option>
+            <option value="Biologia">Biologia</option>
+            <option value="Historia">Historia</option>
+            <option value="Geografia">Geografia</option>
+        </select>
+        <br>
+        <label>Calificacion: </label>
+        <input type="number" name="calificacion" min="0" max="100">
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
